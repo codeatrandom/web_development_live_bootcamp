@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 5rem;
+    background-color: white;
+    padding: 0.5rem 10%;
+}
+header .logo{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+header .logo i{
+    font-size: 2.2rem;
+}
+header .logo span{
+    color: red;
+}
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navbar li{
+    margin-left: 1rem;
+}
+header .navbar li a{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
+}
+header .navbar li a.active{
+    color: green;
+}
+header .navbar li a:hover{
+    color: blue;
+    border-bottom: 0.2rem solid blue;
+    padding: 0.5rem;
+}
+.home{
+    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.home .content{
+    color: black;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
