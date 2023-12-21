@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
+
 *{
-    overflow-x: hidden;
-    overflow-y: hidden;
     cursor: pointer;
 }
 header{
@@ -12,16 +11,16 @@ header{
     left:0;
     right: 0;
     display: flex;
-    align-items: center;
-    justify-content:space-between;
     height: 5rem;
     background-color: white;
     padding: 0.5rem 10%;
     z-index: 1000;
-    box-shadow: 0 1px 100px rgba(146, 161, 176) ;
-}
-section{
-    padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}section {
+  padding: 1rem;
 }
 header .logo{
     font-size: 2.2rem;
@@ -64,7 +63,7 @@ header .navbar li a:hover{
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  min-height: 20rem;
+  min-height: 30rem;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -77,41 +76,46 @@ header .navbar li a:hover{
     height: 100px;
     z-index: 1;
 }
-.home .background{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    background-image: url("https://source.unsplash.com/1700x360/?technology, computer, student");
-    opacity: 0.2;
+.home .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background-image: url("https://source.unsplash.com/1700x360/?technology,computer,learning,student,class,school");
+  opacity: 0.5;
 }
-.home .content h2{
-    font-weight: 800;
-    color: black;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+.home .content h2 {
+  font-weight: 800;
+  color: #002057;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-.home .btn{
-    margin-top: 1rem;
-    border-radius: 4em;
-    color: white;
-    background: blue;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    padding: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1rem;
-    font-weight: 800;
-    text-decoration: none;
-    letter-spacing: 0.1rem;
-    z-index: 1;
+.home .btn {
+  margin-top: 1rem;
+  border-radius: 4em;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-.home .btn:hover{
-    background: #1a047e;
+.home .btn  {
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+.home .btn:hover {
+  background: #1a047e;
+}
+.home .btn:hover i {
+  transform: translateX(5px);
 }
