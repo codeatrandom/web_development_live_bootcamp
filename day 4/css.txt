@@ -1,0 +1,62 @@
+/* Box Model */
+margin: outer spacing;
+padding: inner spacing;
+border: border properties;
+
+/* Dimensions */
+width: element width;
+height: element height;
+max-width: maximum width;
+max-height: maximum height;
+min-width: minimum width;
+min-height: minimum height;
+
+/* Display */
+display: element display type;
+visibility: visibility;
+
+/* Positioning */
+position: position type;
+top, right, bottom, left: offset values;
+float: float direction;
+clear: clear float;
+
+/* Flexbox */
+display: flex;
+flex-direction: flex container direction;
+justify-content: align along main axis;
+align-items: align along cross axis;
+flex: grow shrink basis;
+
+/* Grid */
+display: grid;
+grid-template-rows, grid-template-columns: grid structure;
+grid-gap: gap between grid items;
+
+/* Colors */
+color: text color;
+background-color: background color;
+opacity: transparency;
+
+/* Typography */
+font-family: font stack;
+font-size: font size;
+font-weight: font weight;
+line-height: line height;
+text-align: text alignment;
+text-decoration: text decoration;
+
+/* Borders and Shadows */
+border-radius: border corner radius;
+border-width: border width;
+box-shadow: shadow properties;
+
+/* Transitions and Animations */
+transition: transition properties;
+animation: animation properties;
+
+/* Miscellaneous */
+cursor: mouse pointer type;
+overflow: overflow behavior;
+z-index: stacking order;
+box-sizing: box model sizing;
