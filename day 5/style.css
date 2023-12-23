@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+*{
+    padding:0;
+    margin:0;
+    background-color: blanchedalmond;
+}
+
+.container{
+    border: 2px solid black;
+    width: 40%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: pink;
+}
+
+h3{
+    text-align: center;
+    padding: 1rem ;
+    background-color: pink;
+}
+form{
+    background-color: pink;
+    width: 100%
+}
+#task-input{
+    width: 100%;
+    background-color: aquamarine;
+    height: 20px;
+}
+.add-btn{
+    margin-top: 1rem;
+    border-radius: 4em;
+    color:white;
+    background: #2506ad;
+    box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.task-items{
+    list-style: none;
+    width: 100%;
+}
+#search{
+    width:100%;
+    height: 20px;
+    margin: 10px 0;
+    background-color: aquamarine;
+}
+.clear-tasks{
+    margin-top: 1rem;
+border-radius: 4em;
+color: #fff;
+background: #2506ad;
+box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+width: fit-content;
+padding: 1rem;
+margin-left: auto;
+margin-right: auto;
+  }
+  .err{
+    display:none;
+    width:80%;
+    background-color: red;
+    color: white;
+    margin: 2px 0;
+  }
