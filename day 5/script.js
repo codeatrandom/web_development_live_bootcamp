@@ -9,7 +9,7 @@ addBtn.addEventListener("click", function(e){
     //trim the values of the input
     const taskText = taskInput.ariaValueMax.trim();
     //check the value of the input is empty or not
-    if(taskInput.value !== " "){
+    if(taskInput.value !== ""){
         //create li
         const newLi = document.createElement("li");
         newLi.className="task";
@@ -23,10 +23,10 @@ addBtn.addEventListener("click", function(e){
 
         //make the value of the input to be our text
         task.value = taskText;
-        //create a button
+        //create a delete button
         const deleteBtn = document.createElement("button");
         deleteBtn.className = "delete-btn";
-        
+        deleteBtn.innerText = "Delete";
 
 
     }
