@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <title>Food Ordering Website</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar_brand">
+          <img src="./assests/logo.png" alt="logo" class="brand_logo" />
+        </div>
+        <div class="navbar_nav_items">
+          <div class="nav_item">
+            <button class="button_primary hide_mobile">Order Food</button>
+            <button
+              class="button_primary hamburger_menu mobile_only"
+              id="hamburgermenu"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile_navbar_items mobile_only hamburger_menu_close">
+        <ul>
+          <li class="nav_item">Products</li>
+          <li class="nav_item">Restaurants</li>
+          <li class="nav_item">Pricing</li>
+          <li class="nav_item">About Us</li>
+        </ul>
+        <div class="nav_item">
+          <button class="button_primary">Order Food</button>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <main class="container">
+      <section class="hero_container">
+        <div class="hero_image_container">
+          <img src="./assests/hero.jpg" alt="hero image" class="hero_image" />
+          <img
+            src="./assests/svg/heroShape.svg"
+            alt="hero image shape"
+            class="hero_image_shape"
+          />
+          <img
+            src="./assests/svg/herobgpattren.svg"
+            alt="hero image shape"
+            class="hero_image_pattren"
+          />
+        </div>
+        <div class="hero_description">
+          <h1 class="hero_text">
+            Order food from favourite restaurants near you.
+          </h1>
+          <button class="button_primary">Order Now</button>
+        </div>
+      </section>
+
+      <!-- Video Container -->
+       <section class="video_footage_container">
+        <div class="video_footage">
+          <iframe
+            src="https://player.vimeo.com/video/323795266"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            class="chef_video"
+          ></iframe>
+        </div>
+        <div class="video_footage_text">
+          <p>
+            Your food will be prepared safely with an experienced chef, without
+            compromising on the quality and hygiene.
+          </p>
+        </div>
+      </section>
+      <!-- Food Section is here -->
+      <section class="food_list_container">
+        <h1 class="text-xl">Explore our menu</h1>
+        <div class="food_list_container_diagonal"></div>
+
+        <div class="food_menu_card_list">
+          <div class="food_menu_card">
+            <img
+              src="./assets/burger.jpg"
+              alt="burger"
+              class="food_menu_card_image"
+            />
+            <div class="food_menu_card_details">
+              <h4 class="text-lg"><strong>Burgers</strong></h4>
+              <p>
+                Burger King, Mcdonalds, Burger Place
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+          </div>
+          <div class="food_menu_card food_menu_card_move_up">
+            <img
+              src="./assets/pizza.jpg"
+              alt="pizza"
+              class="food_menu_card_image"
+            />
+            <div class="food_menu_card_details">
+              <h4 class="text-lg"><strong>Pizza</strong></h4>
+              <p>
+                Pizza Hut, Domino's Pizza
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+          </div>
+          <div class="food_menu_card">
+            <img
+              src="./assets/iceCream.jpg"
+              alt="iceCream"
+              class="food_menu_card_image"
+            />
+            <div class="food_menu_card_details">
+              <h4 class="text-lg"><strong>Ice Creams</strong></h4>
+              <p>
+                Baskin Robins, Ibaco
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="food_list_view_more">View More</div>
+      </section>
+  </body>
+</html>
