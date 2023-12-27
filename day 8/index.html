@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8</title>
+    <style>
+        /* .transformDiv{
+            height: 50px;
+            width: 50px;
+            margin: 100px;
+            background-color: blue;
+            transform: skewY(-45deg);
+        } */
+        @keyframes example {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+     }
+     .transformDiv{
+        width:100px;
+        height:100px;
+       background-color: red;
+       animation-name: example;
+       animation-duration: 4s;
+        animation-iteration-count: 5;
+     }
+    </style>
+</head>
+<body>
+    <div class="transformDiv">
+
+    </div>
+    <!-- <form>
+        <select>
+            Choose a state
+            <option>Haryana</option>
+            <option>Punjab</option>
+            <option>Assam</option>
+            <option>UP</option>
+
+        </select>
+    </form> -->
+    <!-- <canvas id="myCanvas" width="300" height="150"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+	    const ctx = canvas.getContext("2d");
+        // Draw a filled rectangle
+
+        ctx.strokeStyle = "green";
+        ctx.lineWidth = 4;
+        ctx.strokeRect(50, 25, 100, 50);
+
+
+        </script> -->
+</body>
+</html>

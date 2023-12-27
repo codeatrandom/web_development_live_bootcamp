@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato - Largest Food Delivery network</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic"
       rel="stylesheet"
     />
-    <title>Food Ordering Website</title>
   </head>
   <body>
     <header>
@@ -20,14 +20,14 @@
         <div class="navbar_nav_items">
           <div class="nav_item">
             <button class="button_primary hide_mobile">Order Food</button>
-            <button
+             <div></div>
+              <div></div>
+            </button><button
               class="button_primary hamburger_menu mobile_only"
               id="hamburgermenu"
             >
               <div></div>
-              <div></div>
-              <div></div>
-            </button>
+             
           </div>
         </div>
       </nav>
@@ -38,11 +38,12 @@
           <li class="nav_item">Pricing</li>
           <li class="nav_item">About Us</li>
         </ul>
+
         <div class="nav_item">
           <button class="button_primary">Order Food</button>
         </div>
+      </div>
     </header>
-    <!-- Hero Section -->
     <main class="container">
       <section class="hero_container">
         <div class="hero_image_container">
@@ -66,8 +67,7 @@
         </div>
       </section>
 
-      <!-- Video Container -->
-       <section class="video_footage_container">
+      <section class="video_footage_container">
         <div class="video_footage">
           <iframe
             src="https://player.vimeo.com/video/323795266"
@@ -84,7 +84,7 @@
           </p>
         </div>
       </section>
-      <!-- Food Section is here -->
+
       <section class="food_list_container">
         <h1 class="text-xl">Explore our menu</h1>
         <div class="food_list_container_diagonal"></div>
@@ -92,7 +92,7 @@
         <div class="food_menu_card_list">
           <div class="food_menu_card">
             <img
-              src="./assets/burger.jpg"
+              src="./assests/burger.jpg"
               alt="burger"
               class="food_menu_card_image"
             />
@@ -106,7 +106,7 @@
           </div>
           <div class="food_menu_card food_menu_card_move_up">
             <img
-              src="./assets/pizza.jpg"
+              src="./assests/pizza.jpg"
               alt="pizza"
               class="food_menu_card_image"
             />
@@ -120,7 +120,7 @@
           </div>
           <div class="food_menu_card">
             <img
-              src="./assets/iceCream.jpg"
+              src="./assests/iceCream.jpg"
               alt="iceCream"
               class="food_menu_card_image"
             />
@@ -135,5 +135,83 @@
         </div>
         <div class="food_list_view_more">View More</div>
       </section>
+      <section class="restaurant_list_container">
+        <div class="restaurant_list_text">
+          <h4 class="text-xl">Order From 100s of restaurants</h4>
+        </div>
+        <div class="restaurant_list_images_container">
+          <div class="restaurant_list_row_1">
+            <div>
+              <img
+                src="./assests/restaurant1.jpg"
+                alt="restaurant1"
+                class="restaurant1"
+              />
+            </div>
+            <img
+              src="./assests/restaurant2.jpg"
+              alt="restaurant2"
+              class="restaurant2"
+            />
+          </div>
+          <div class="restaurant_list_row_2">
+            <img
+              src="./assests/restaurant3.jpg"
+              alt="restaurant3"
+              class="restaurant3"
+            />
+            <img
+              src="./assests/restaurant4.jpg"
+              alt="restaurant4"
+              class="restaurant4"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="email_subcribe_container">
+        <div>
+          <h1 class="text-xl">Stay Updated</h1>
+          <div class="email_subcribe_input_field">
+            <div>
+              <input
+                type="email"
+                placeholder="email@email.com"
+                class="email_input"
+              />
+            </div>
+            <button class="button_primary">Get Updates</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote_container">
+        <div class="quote_image_overlay"></div>
+        <h3 class="quote_image_text">
+          When a man's stomach is full it makes no difference whether he is rich
+          or poor.
+        </h3>
+      </section>
+    </main>
+    <footer>
+      <img src="./assests/logo.png" alt="logo" />
+      <ul>
+        <li>Pricing</li>
+        <li>Terms and condition</li>
+        <li>Partnership</li>
+        <li>Career</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+    <script>
+      const hamburgermenu = document.getElementById("hamburgermenu");
+      const mobileNavDropDown = document.querySelector(
+        ".mobile_navbar_items"
+      );
+      window.addEventListener("click", () => {
+        if (mobileNavDropDown.classList.contains("hamburger_menu_close"))
+          return mobileNavDropDown.classList.remove("hamburger_menu_close");
+        return mobileNavDropDown.classList.add("hamburger_menu_close");
+      });
+    </script>
   </body>
 </html>
